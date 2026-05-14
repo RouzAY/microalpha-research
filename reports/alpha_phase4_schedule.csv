@@ -1,0 +1,11 @@
+asset,venue,day,evaluation_label,n_train_frames,prior_sign
+AAPL,XNAS,2025-06-03,aapl_walkforward,1,1
+AAPL,XNAS,2025-06-04,aapl_walkforward,2,1
+AAPL,XNAS,2025-06-05,aapl_walkforward,3,1
+AAPL,XNAS,2025-06-06,aapl_walkforward,4,1
+AAPL,XNAS,2025-06-07,aapl_walkforward,5,1
+AAPL,XNAS,2025-06-08,aapl_walkforward,6,1
+AAPL,XNAS,2025-06-09,aapl_walkforward,7,1
+AAPL,XNAS,2025-06-10,aapl_walkforward,8,1
+AAPL,XNAS,2025-06-11,aapl_walkforward,9,1
+BNBUSDT,BINANCE,2024-03-30,binance_external,10,1

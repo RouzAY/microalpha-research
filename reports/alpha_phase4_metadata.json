@@ -1,0 +1,65 @@
+{
+  "optiver_symbol": "AAPL",
+  "binance_symbol": "BNBUSDT",
+  "aapl_eval_days": [
+    "2025-06-03",
+    "2025-06-04",
+    "2025-06-05",
+    "2025-06-06",
+    "2025-06-07",
+    "2025-06-08",
+    "2025-06-09",
+    "2025-06-10",
+    "2025-06-11"
+  ],
+  "binance_days": [
+    "2024-03-30"
+  ],
+  "strategies": [
+    "momentum",
+    "signed_flow",
+    "micro_fixed",
+    "ridge_static",
+    "online_regime",
+    "ramp_real",
+    "camp_r"
+  ],
+  "phase4_config": {
+    "horizon": 30,
+    "warmup": 800,
+    "hold_steps": 30,
+    "threshold_quantile": 0.85,
+    "cost_coeff": 0.12,
+    "ridge_lambda": 3000.0,
+    "beta_switch_threshold": 2.5,
+    "micro_weight": 0.7,
+    "ml_weight": 0.3,
+    "shift_threshold": 3.0,
+    "eval_start_index": 1,
+    "binance_sample_seconds": 1
+  },
+  "best_overall": {
+    "mean_net_bps": 0.1711321608592732,
+    "total_net_bps": 29194.63324610943,
+    "mean_gross_bps": 0.1786550336563982,
+    "mean_cost_bps": 0.0075228727971250004,
+    "turnover": 0.009115048916452224,
+    "active_share": 0.1651201369308956,
+    "hit_rate": 0.08493115353728377,
+    "n_episodes": 10,
+    "positive_episodes": 9,
+    "tstat_episode_total": 3.7001704226328314,
+    "strategy": "camp_r"
+  },
+  "best_external": {
+    "asset": "BNBUSDT",
+    "venue": "BINANCE",
+    "strategy": "camp_r",
+    "mean_net_bps": 0.030884881958973057,
+    "total_net_bps": 2666.41539904598,
+    "mean_gross_bps": 0.03109162894030229,
+    "mean_cost_bps": 0.00020674698132923394,
+    "turnover": 0.01037829823707925,
+    "active_share": 0.1740913197581486
+  }
+}

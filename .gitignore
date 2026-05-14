@@ -1,0 +1,109 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+alpha/
+*.egg-info/
+
+# Build / packaging
+build/
+dist/
+.eggs/
+*.egg
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE / editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# LibreOffice temporary lock files
+.~lock*#
+data/**/.~lock*#
+
+# Logs
+*.log
+logs/
+
+# Heavy/generated experiment outputs
+outputs/
+results/
+runs/
+artifacts/
+checkpoints/
+models/
+
+# Raw heavy report tables
+reports/*_results.csv
+reports/real_results.csv
+reports/synthetic_results.csv
+reports/*.parquet
+reports/*.feather
+reports/*.pkl
+reports/*.joblib
+reports/*.h5
+reports/*.pt
+reports/*.pth
+reports/*.ckpt
+
+# Keep lightweight report material
+!reports/*summary.csv
+!reports/*summary.md
+!reports/*metadata.json
+!reports/*schedule.csv
+!reports/*.png
+!reports/*.jpg
+!reports/*.jpeg
+!reports/*.pdf
+!reports/*.html
+!reports/*.md
+!reports/*.json
+
+# Model / serialized binary artifacts
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+*.ckpt
+
+# Experiment tracking
+mlruns/
+wandb/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# LaTeX / reports build files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.run.xml
+*.synctex.gz
