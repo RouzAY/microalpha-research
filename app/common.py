@@ -151,7 +151,7 @@ def show_df(df: Optional[pd.DataFrame], digits: int = 4) -> None:
     if df is None:
         st.info("Table not available.")
         return
-    st.dataframe(df.round(digits), hide_index=True, width="stretch")
+    st.dataframe(df.round(digits), hide_index=True, use_container_width=True)
 
 
 def doc_text_or_none(filename: str) -> Optional[str]:
@@ -171,7 +171,11 @@ def report_text_or_none(filename: str) -> Optional[str]:
 def show_image(filename: str, caption: str) -> None:
     path = REPORTS / filename
     if path.exists():
-        st.image(str(path), caption=caption, width="stretch")
+        try:
+            st.image(str(path), caption=caption, use_container_width=True)
+        except TypeError:
+            # Compatibility fallback for older Streamlit versions
+            st.image(str(path), caption=caption)
     else:
         st.info(f"Missing image: reports/{filename}")
 
